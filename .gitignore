@@ -105,3 +105,6 @@ dist
 
 # Security
 Frontend/app-portfolio/src/process
+
+# Modules
+Frontend/app-portfolio/node_modules

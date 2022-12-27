@@ -1,0 +1,61 @@
+.projects {
+    justify-content: center;
+    margin: 80px 220px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    padding: 10px 10px;
+    white-space: pre-wrap;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card__title {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.card__description {
+    font-size: 13px;
+    margin: 0 16px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.card__tools {
+    font-size: 10px;
+    text-align: left;
+}
+
+.card__tools li {
+    margin: 0 15px;
+}
+
+.card__tools ul {
+    padding-left: 15px;
+    text-align: center;
+    display: flex;
+    list-style: none;
+}

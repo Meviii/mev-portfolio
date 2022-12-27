@@ -1,0 +1,17 @@
+.copyright {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.social-buttons {
+    text-align: right;
+}
+
+.container {
+    margin: 0 220px;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: flex;
+    padding-bottom: 10px;
+}

@@ -5,8 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/images/Main/bg.png");
-  background-size: contain;
+  background-image: url("./assets/images/Main/banner-bg.png");
+  background-size: cover;
+  color: rgb(211, 213, 120);
 }
 
 code {

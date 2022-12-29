@@ -15,7 +15,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div style={{ backgroundImage: config.header.background }}></div>
     <Header />
     <About />
     <Projects />

@@ -8,6 +8,13 @@
     text-align: right;
 }
 
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
 .container {
     margin: 0 220px;
     justify-content: space-between;

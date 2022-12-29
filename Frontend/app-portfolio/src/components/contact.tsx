@@ -36,7 +36,7 @@ function Contact() {
         event.preventDefault();
 
         if (isRecaptchaValid) {
-            // submit form
+            //FIXME submit form
         } else {
             setShowError(true);
         }
@@ -60,9 +60,13 @@ function Contact() {
 
                         <ReCAPTCHA sitekey={key_config.env.recaptcha_site_key} onChange={handleRecaptchaChange} />
                         {showError && <p>Please complete the Recaptcha form before submitting the form.</p>}
+
+                        <button type="submit">Submit</button>
                     </div>
-                    <button type="submit">Submit</button>
                 </form>
+                <div className='contact-image'>
+                    <img width="400" src={config.contact.image} alt='contact' />
+                </div>
             </div>
         </div>
     );

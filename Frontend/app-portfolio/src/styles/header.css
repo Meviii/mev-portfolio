@@ -28,19 +28,13 @@ header {
 
 .nav-bar li {
     justify-content: space-between;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 
 .nav-bar a {
-    color: black;
     text-decoration: none;
+    color: rgb(211, 213, 120);
 }
 
 .nav-bar a:hover {
-    color: blue;
-}
-
-.nav-bar a.active {
-    color: red;
+    color: rgb(109, 87, 199);
 }

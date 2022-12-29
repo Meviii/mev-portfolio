@@ -1,21 +1,39 @@
 .about-me {
     text-align: left;
-    display: block;
-    margin: 0px 220px;
-    width: 500px;
+    display: flex;
+    margin: 10px 220px;
+    gap: 130px;
 }
 
-.about-me text {
-    white-space: "pre-wrap"
+/* .about-me-text {} */
+
+.slide-in-from-left {
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(-143%);
+}
+
+.slide-in-from-right {
+    transition: transform 0.4s ease-in-out;
+    transform: translateX(143%);
+}
+
+.visible {
+    transform: translateX(0%);
 }
 
 .about-me h1 {
     font-size: 24px;
-    color: rgb(0, 0, 0);
 }
 
 .about-me p {
     font-size: 16px;
     line-height: 1.5;
     white-space: break-spaces;
+}
+
+.about-me-image {
+
+    width: 400px;
+    height: 400px;
+    margin-top: 140px;
 }

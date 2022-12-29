@@ -18,7 +18,7 @@ function Header() {
         <header>
             <div className="logo">
                 <a href='/'>
-                    <p>{config.header.name}</p>
+                    <img width="40" src={config.header.logo} alt={config.header.title} />
                 </a>
             </div>
             <div className="nav-bar">

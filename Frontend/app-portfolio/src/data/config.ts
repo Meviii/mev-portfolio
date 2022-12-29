@@ -1,10 +1,13 @@
-import code from "../assets/images/About Me/code.png";
+import actor from "../assets/images/About Me/actor.png";
 import github_social from "../assets/images/Footer/github.png";
-import background from "../assets/images/Main/bg.png";
+import logo from "../assets/images/Header/logo.png";
+import linkedin_social from "../assets/images/Footer/linkedin.png";
+import background from "../assets/images/Main/banner-bg.png";
+import astro from "../assets/images/Contact/astro.png";
 
 export const config = {
     header: {
-        name: 'Mevlut "Mev" Saluk',
+        logo: logo,
         title: "Software Engineer",
         nav_bar: {
             about_me: {
@@ -29,8 +32,7 @@ export const config = {
         \nI am particularly interested in backend development and have experience working with REST APIs.In my university projects and personal projects, I have demonstrated my ability to design and implement efficient and scalable solutions, and I am always looking for opportunities to learn and grow as a software engineer.
         
         \nIn the future, I hope to work with a team of talented engineers to create innovative and impactful software solutions.I am eager to apply my skills and knowledge to challenging projects and continue to develop my expertise in web development and backend engineering.`,
-        test: "test hello",
-        image: code
+        image: actor,
     },
     projects: {
         workout_visualizer: {
@@ -56,6 +58,27 @@ export const config = {
             description: "An application designed for a private clinic providing doctor/patient communications and a medical and appointment booking system.",
             tools: ["REST API", "MySQL", "Flutter", "Java", "Spring Boot"],
             link: "https://github.com/Meviii/SEPT2022"
+        },
+        portfolio: {
+            title: "Portfolio Website",
+            description: "A portfolio website that presents my projects in a nice way :D",
+            tools: ["React", "TypeScript", "CSS"],
+            link: "https://github.com/Meviii/mev-portfolio"
+        }
+    },
+    contact: {
+        title: "Contact Me",
+        description: "Feel free to contact me for any inquiries or job opportunities!",
+        image: astro,
+        contact_info: {
+            email: "misaluk20@gmail.com",
+            phone: "+61 438 000 000",
+            address: "Melbourne, Australia",
+        },
+        form: {
+            name: "Name",
+            email: "Email",
+            message: "Message"
         }
     },
     footer: {
@@ -65,6 +88,11 @@ export const config = {
                 image: github_social,
                 alt: "Github",
                 link: "https://github.com/Meviii"
+            },
+            linkedin: {
+                image: linkedin_social,
+                alt: "LinkedIn",
+                link: "https://www.linkedin.com/in/mevlut-ishak-saluk-2a620217a/"
             }
         }
     }

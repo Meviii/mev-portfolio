@@ -1,9 +1,27 @@
-header {
+.header-container {
     height: 60px;
     display: flex;
     margin: 0px 180px;
     align-items: center;
     padding-top: 10px;
+}
+
+.nav-bar button {
+    background-color: rgb(109, 87, 199);
+    border: rgb(251, 250, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 25px;
+    width: 132px;
+    height: 50px;
+    color: rgb(254, 254, 254);
+    font-weight: bold;
+}
+
+.nav-bar button:hover {
+    background-color: rgb(148, 76, 184);
 }
 
 .logo {
@@ -14,8 +32,8 @@ header {
 }
 
 .nav-bar {
-    text-align: right;
-    padding: 0 40px;
+    padding: 0 14%;
+    display: flex;
 }
 
 .nav-bar ul {

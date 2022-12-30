@@ -14,8 +14,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     background-color: rgb(104, 143, 211);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
@@ -27,26 +27,30 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .card__title {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     margin: 16px 0;
 }
 
 .card__description {
-    font-size: 13px;
+    font-size: 16px;
     margin: 0 16px;
     padding-bottom: 60px;
     text-align: center;
+    color: #fff;
 }
 
 .card__tools {
-    font-size: 10px;
+    width: 350px;
+    font-size: 13px;
     text-align: left;
+    margin-bottom: 5px;
+    color: rgb(173, 220, 236);
 }
 
 .card__tools li {

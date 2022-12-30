@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/projects.css';
 import { config } from '../data/config';
 
 function Projects() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsVisible(true);
+        }, 1000);
+    }, []);
 
     return (
         <div id='projects' className='projects'>

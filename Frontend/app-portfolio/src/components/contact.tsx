@@ -49,21 +49,24 @@ function Contact() {
     return (
         <div id="contact" className="contact">
             <h2>Contact</h2>
+            <p>{config.contact.description}</p>
             <div className='contact-container'>
-                <form onSubmit={handleFormSubmit}>
-                    <div className='form-input'>
-                        <input placeholder='Name*' type="text" name="name" value={formState.name} onChange={handleInputChange} />
+                <div className='contact-form'>
+                    <form onSubmit={handleFormSubmit}>
+                        <div className='form-input'>
+                            <input placeholder='Name*' type="text" name="name" value={formState.name} onChange={handleInputChange} />
 
-                        <input placeholder='Email*' type="email" name="email" value={formState.email} onChange={handleInputChange} />
+                            <input placeholder='Email*' type="email" name="email" value={formState.email} onChange={handleInputChange} />
 
-                        <textarea placeholder='Message*' name="message" value={formState.message} onChange={handleMessageChange} />
+                            <textarea placeholder='Message*' name="message" value={formState.message} onChange={handleMessageChange} />
 
-                        <ReCAPTCHA sitekey={key_config.env.recaptcha_site_key} onChange={handleRecaptchaChange} />
-                        {showError && <p>Please complete the Recaptcha form before submitting the form.</p>}
+                            <ReCAPTCHA sitekey={key_config.env.recaptcha_site_key} onChange={handleRecaptchaChange} />
+                            {showError && <p>Please complete the Recaptcha form before submitting the form.</p>}
 
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
                 <div className='contact-image'>
                     <img width="400" src={config.contact.image} alt='contact' />
                 </div>

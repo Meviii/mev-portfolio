@@ -2,19 +2,21 @@
     text-align: left;
     display: flex;
     margin: 10px 220px;
-    gap: 130px;
+    gap: 120px;
 }
 
-/* .about-me-text {} */
+.about-me-image {
+    margin-right: 120px;
+}
 
 .slide-in-from-left {
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: translateX(-143%);
 }
 
 .slide-in-from-right {
-    transition: transform 0.4s ease-in-out;
-    transform: translateX(143%);
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(180%);
 }
 
 .visible {
@@ -35,5 +37,5 @@
 
     width: 400px;
     height: 400px;
-    margin-top: 140px;
+    margin-top: 100px;
 }

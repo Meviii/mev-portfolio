@@ -4,8 +4,11 @@ import logo from "../assets/images/Header/logo.png";
 import linkedin_social from "../assets/images/Footer/linkedin.png";
 import background from "../assets/images/Main/banner-bg.png";
 import astro from "../assets/images/Contact/astro.png";
-
 export const config = {
+    head: {
+        title: "Mev's Portfolio",
+        icon: logo
+    },
     header: {
         logo: logo,
         title: "Software Engineer",
@@ -22,6 +25,10 @@ export const config = {
                 text: "Contact",
                 link: "contact"
             }
+        },
+        connect_button: {
+            text: "Let's Connect",
+            link: "https://www.linkedin.com/in/mevlut-ishak-saluk-2a620217a/"
         },
         background: background
     },
@@ -74,11 +81,6 @@ export const config = {
             email: "misaluk20@gmail.com",
             phone: "+61 438 000 000",
             address: "Melbourne, Australia",
-        },
-        form: {
-            name: "Name",
-            email: "Email",
-            message: "Message"
         }
     },
     footer: {

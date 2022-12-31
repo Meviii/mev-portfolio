@@ -3,6 +3,7 @@ import '../styles/contact.css';
 import { config } from '../data/config';
 import ReCAPTCHA from "react-google-recaptcha";
 import { key_config } from '../process/key_config';
+import { send } from 'emailjs-com';
 
 type ContactFormState = {
     name: string;
@@ -17,10 +18,11 @@ function Contact() {
         message: '',
     });
 
-    const recaptchaRef = useRef<ReCAPTCHA>(null);
     const [isRecaptchaValid, setIsRecaptchaValid] = React.useState(false);
-    const [showError, setShowError] = React.useState(false);
-
+    const [showRecapError, setShowRecapError] = React.useState(false);
+    const [showEmailSendSuccess, setEmailSendSuccess] = React.useState(false);
+    const [showEmailSendError, setEmailSendError] = React.useState(false);
+    const [submitIsLoading, setSubmitIsLoading] = useState(false);
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = event.target;
@@ -32,15 +34,36 @@ function Contact() {
         setFormState((prevState) => ({ ...prevState, [name]: value }));
     };
 
+
     const handleFormSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
         if (isRecaptchaValid) {
-            //FIXME submit form
+            setSubmitIsLoading(true);
+            _sendEmail();
         } else {
-            setShowError(true);
+            setShowRecapError(true);
         }
     };
+
+    const _sendEmail = () => {
+
+        send(key_config.email_js.service_id,
+            key_config.email_js.template_id,
+            formState,
+            key_config.email_js.public_key
+        )
+            .then((response) => {
+                console.log('Sent', response.status, response.text);
+                setEmailSendSuccess(true);
+                setSubmitIsLoading(false)
+            })
+            .catch((err) => {
+                console.log('FAILED...', err);
+                setEmailSendError(true);
+                setSubmitIsLoading(false)
+            });
+    }
 
     const handleRecaptchaChange = (response: string | null) => {
         setIsRecaptchaValid(!!response);
@@ -61,9 +84,20 @@ function Contact() {
                             <textarea placeholder='Message*' name="message" value={formState.message} onChange={handleMessageChange} />
 
                             <ReCAPTCHA sitekey={key_config.env.recaptcha_site_key} onChange={handleRecaptchaChange} />
-                            {showError && <p>Please complete the Recaptcha form before submitting the form.</p>}
 
-                            <button type="submit">Submit</button>
+                            <div className='button-response-container'>
+                                <div className='button-container'>
+                                    <button type="submit" disabled={submitIsLoading} >
+                                        {submitIsLoading ? <img width="25" src={config.contact.loading} alt='loading' /> : 'Submit'}
+                                    </button>
+                                </div>
+
+                                <div className='response-container'>
+                                    {showRecapError && <p>Please complete the form.</p>}
+                                    {showEmailSendSuccess && <p>Thank you for your message. I will get back to you as soon as possible.</p>}
+                                    {showEmailSendError && <p>There was an error sending your message. Please try again later.</p>}
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

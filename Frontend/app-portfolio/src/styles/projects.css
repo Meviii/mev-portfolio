@@ -14,9 +14,9 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: 375px;
     height: 250px;
-    background-color: rgb(104, 143, 211);
+    background-color: rgba(116, 58, 163, 0.6);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     cursor: pointer;
@@ -50,7 +50,7 @@
     font-size: 13px;
     text-align: left;
     margin-bottom: 5px;
-    color: rgb(173, 220, 236);
+    color: rgb(225, 206, 241);
 }
 
 .card__tools li {

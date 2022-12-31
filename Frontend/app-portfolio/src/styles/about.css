@@ -5,6 +5,16 @@
     gap: 120px;
 }
 
+.about-me-text {
+    background-color: rgba(116, 58, 163, 0.2);
+    box-shadow: 0 5px 20px rgba(214, 40, 230, 0.1);
+    border-radius: 20px;
+    height: 400px;
+    width: 700px;
+    padding: 10px 10px;
+    white-space: pre-wrap;
+}
+
 .about-me-image {
     margin-right: 120px;
 }
@@ -16,7 +26,7 @@
 
 .slide-in-from-right {
     transition: transform 0.5s ease-in-out;
-    transform: translateX(180%);
+    transform: translateX(200%);
 }
 
 .visible {
@@ -34,7 +44,6 @@
 }
 
 .about-me-image {
-
     width: 400px;
     height: 400px;
     margin-top: 100px;

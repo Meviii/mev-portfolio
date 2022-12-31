@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/header.css';
 import { config } from '../data/config';
 
 function Header() {
 
-    const [homePageURL, setHomePageURL] = useState("/");
 
     const handleClick = (location: string, event: React.MouseEvent<HTMLAnchorElement>) => {
         event.preventDefault();
-        console.log(location);
+
         const division = document.getElementById(location);
-        console.log(division);
+
         if (division) {
             division.scrollIntoView({ behavior: 'smooth' });
         }
@@ -20,7 +19,7 @@ function Header() {
         <header>
             <div className="header-container">
                 <div className="logo">
-                    <a href={homePageURL}>
+                    <a href="/mev-portfolio">
                         <img width="50" src={config.header.logo} alt={config.header.title} />
                     </a>
                 </div>

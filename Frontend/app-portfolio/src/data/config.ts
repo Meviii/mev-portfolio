@@ -4,6 +4,8 @@ import logo from "../assets/images/Header/logo.png";
 import linkedin_social from "../assets/images/Footer/linkedin.png";
 import background from "../assets/images/Main/banner-bg.png";
 import astro from "../assets/images/Contact/astro.png";
+import loading_gif from "../assets/images/Contact/loading-gif.gif";
+
 export const config = {
     head: {
         title: "Mev's Portfolio",
@@ -36,9 +38,9 @@ export const config = {
         title: "About Me",
         description: `As a current software engineering student at RMIT, I am excited to combine my previous IT degree and passion for programming to pursue a career in web development or backend engineering. With experience in languages such as Python, C++, and Java, I have a strong foundation in programming and a proven ability to deliver high-quality projects.
         
-        \nI am particularly interested in backend development and have experience working with REST APIs.In my university projects and personal projects, I have demonstrated my ability to design and implement efficient and scalable solutions, and I am always looking for opportunities to learn and grow as a software engineer.
+        \nI am particularly interested in backend development and have experience working with REST APIs. In my university projects and personal projects, I have demonstrated my ability to design and implement efficient and scalable solutions, and I am always looking for opportunities to learn and grow as a software engineer.
         
-        \nIn the future, I hope to work with a team of talented engineers to create innovative and impactful software solutions.I am eager to apply my skills and knowledge to challenging projects and continue to develop my expertise in web development and backend engineering.`,
+        \nIn the future, I hope to work with a team of talented engineers to create innovative and impactful software solutions. I am eager to apply my skills and knowledge to challenging projects and continue to develop my expertise in web development and backend engineering.`,
         image: actor,
     },
     projects: {
@@ -69,7 +71,7 @@ export const config = {
         portfolio: {
             title: "Portfolio Website",
             description: "A portfolio website that presents my projects in a nice way :D",
-            tools: ["React", "TypeScript", "CSS"],
+            tools: ["React", "TypeScript", "CSS", "EmailJS"],
             link: "https://github.com/Meviii/mev-portfolio"
         }
     },
@@ -77,6 +79,7 @@ export const config = {
         title: "Contact Me",
         description: "Feel free to contact me for any inquiries or job opportunities!",
         image: astro,
+        loading: loading_gif,
         contact_info: {
             email: "misaluk20@gmail.com",
             phone: "+61 438 000 000",

@@ -15,7 +15,9 @@ function AboutMe() {
         <div id='about-me' className='about-me'>
             <div className={`slide-in-from-left ${isVisible ? 'visible' : ''}`}>
                 <h1 >{config.aboutMe.title}</h1>
-                <p >{config.aboutMe.description}</p>
+                <div className='about-me-text'>
+                    <p >{config.aboutMe.description}</p>
+                </div>
             </div>
             <div className='about-me-image'>
                 <img className={`slide-in-from-right ${isVisible ? 'visible' : ''}`} width="400" src={config.aboutMe.image} alt='about-me' />

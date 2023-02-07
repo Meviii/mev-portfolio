@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "553882a09e8f716d8c5c",
-    "url": "/mev-portfolio/static/css/main.960d0e17.chunk.css"
+    "revision": "e18c1047a18a48ac0328",
+    "url": "/mev-portfolio/static/css/main.d76cb167.chunk.css"
   },
   {
-    "revision": "553882a09e8f716d8c5c",
-    "url": "/mev-portfolio/static/js/main.553882a0.chunk.js"
+    "revision": "e18c1047a18a48ac0328",
+    "url": "/mev-portfolio/static/js/main.e18c1047.chunk.js"
   },
   {
     "revision": "046e05133628af1d8cc8",
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "/mev-portfolio/static/media/loading-gif.f3716107.gif"
   },
   {
-    "revision": "250cd409dded942e29dced660e040158",
+    "revision": "73f2d35a49ceff938ec40f8cc8e27677",
     "url": "/mev-portfolio/index.html"
   }
 ];

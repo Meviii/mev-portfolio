@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "1849867f7e8b341fbc9d",
-    "url": "/mev-portfolio/static/css/main.8ad98dd9.chunk.css"
+    "revision": "553882a09e8f716d8c5c",
+    "url": "/mev-portfolio/static/css/main.960d0e17.chunk.css"
   },
   {
-    "revision": "1849867f7e8b341fbc9d",
-    "url": "/mev-portfolio/static/js/main.1849867f.chunk.js"
+    "revision": "553882a09e8f716d8c5c",
+    "url": "/mev-portfolio/static/js/main.553882a0.chunk.js"
   },
   {
-    "revision": "b965d220e0d6421fd4e0",
-    "url": "/mev-portfolio/static/js/1.b965d220.chunk.js"
+    "revision": "046e05133628af1d8cc8",
+    "url": "/mev-portfolio/static/js/1.046e0513.chunk.js"
   },
   {
-    "revision": "9c2efbee6184928d1277",
-    "url": "/mev-portfolio/static/js/2.9c2efbee.chunk.js"
+    "revision": "1053d41bc42d73786a8d",
+    "url": "/mev-portfolio/static/js/2.1053d41b.chunk.js"
   },
   {
-    "revision": "e724c919cf979eba14bd",
-    "url": "/mev-portfolio/static/js/runtime~main.e724c919.js"
+    "revision": "9ef11480da5e5a68a771",
+    "url": "/mev-portfolio/static/js/runtime~main.9ef11480.js"
   },
   {
     "revision": "921c2b689ea2c37750efe38402aad8e1",
@@ -44,7 +44,11 @@ self.__precacheManifest = [
     "url": "/mev-portfolio/static/media/astro.d252e21e.png"
   },
   {
-    "revision": "ff6b2144d6c162728136ea374d61ef15",
+    "revision": "f371610720454e863e348761a5bf7a34",
+    "url": "/mev-portfolio/static/media/loading-gif.f3716107.gif"
+  },
+  {
+    "revision": "250cd409dded942e29dced660e040158",
     "url": "/mev-portfolio/index.html"
   }
 ];

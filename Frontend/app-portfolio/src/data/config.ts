@@ -35,7 +35,7 @@ export const config = {
         background: background
     },
     aboutMe: {
-        title: "About Me",
+        title: "",
         description: `As a current software engineering student at RMIT, I am excited to combine my previous IT degree and passion for programming to pursue a career in web development or backend engineering. With experience in languages such as Python, C++, and Java, I have a strong foundation in programming and a proven ability to deliver high-quality projects.
         
         \nI am particularly interested in backend development and have experience working with REST APIs. In my university projects and personal projects, I have demonstrated my ability to design and implement efficient and scalable solutions, and I am always looking for opportunities to learn and grow as a software engineer.
@@ -63,7 +63,7 @@ export const config = {
             link: "https://github.com/Meviii/APT-Assignment2-Individual"
         },
         md_online: {
-            title: "MD Online - Telemedicine Applicaiton",
+            title: "MD Online - Telemedicine Application",
             description: "An application designed for a private clinic providing doctor/patient communications and a medical and appointment booking system.",
             tools: ["REST API", "MySQL", "Flutter", "Java", "Spring Boot"],
             link: "https://github.com/Meviii/SEPT2022"
@@ -73,7 +73,20 @@ export const config = {
             description: "A portfolio website that presents my projects in a nice way :D",
             tools: ["React", "TypeScript", "CSS", "EmailJS"],
             link: "https://github.com/Meviii/mev-portfolio"
+        },
+        mcba_bank: {
+            title: "MCBA - Most Common Bank of Australia",
+            description: "An application designed for a bank providing a banking system for customers. Consists of an Admin API, Admin WEB Portal and a Customer WEB Application.",
+            tools: ["REST API", "Azure SQL", ".NET", "HTML/CSS", "C#", "MVC"],
+            link: "https://github.com/rmit-wdt-fs-2023/s3717696-s3811920-a2"
+        },
+        mcba_console: {
+            title: "MCBA - Console Application",
+            description: "A console application written in C# designed for a bank providing a banking system for customers.",
+            tools: ["C#", "MVC", "Dependency Injection", "Azure SQL"],
+            link: "https://github.com/rmit-wdt-fs-2023/s3717696-a1"
         }
+
     },
     contact: {
         title: "Contact Me",

@@ -34,31 +34,35 @@ export const config = {
         },
         background: background
     },
+    overview: {
+        image: actor,
+        title: "Hi! I'm Mev",
+        description: `I\'m a software engineering student based in Melbourne, Australia. I\'m passionate about creating innovative and impactful software solutions. I\'m currently studying at RMIT University and I\'m looking for opportunities to apply my skills and knowledge to challenging projects.`,
+    },
     aboutMe: {
-        title: "",
+        title: "About Me",
         description: `As a current software engineering student at RMIT, I am excited to combine my previous IT degree and passion for programming to pursue a career in web development or backend engineering. With experience in languages such as Python, C++, and Java, I have a strong foundation in programming and a proven ability to deliver high-quality projects.
         
         \nI am particularly interested in backend development and have experience working with REST APIs. In my university projects and personal projects, I have demonstrated my ability to design and implement efficient and scalable solutions, and I am always looking for opportunities to learn and grow as a software engineer.
         
-        \nIn the future, I hope to work with a team of talented engineers to create innovative and impactful software solutions. I am eager to apply my skills and knowledge to challenging projects and continue to develop my expertise in web development and backend engineering.`,
-        image: actor,
+        \nIn the future, I hope to work with a team of talented engineers to create innovative and impactful software solutions. I am eager to apply my skills and knowledge to challenging projects and continue to develop my expertise in web development and backend engineering.`
     },
     projects: {
         workout_visualizer: {
             title: "Workout Visualizer",
-            description: "A useful workout visualizer that formats and displays workout data from a SQLite database.",
+            description: "A useful workout visualizer that nicely formats saved workouts in the application into an Excel file.",
             tools: ["Python", "PyQT5", "MVC", "SQLite", "GUI"],
             link: "https://github.com/Meviii/Workout-Visualizer"
         },
         scrabble_game: {
             title: "Scrabble Game",
-            description: "A text based scrabble game that allows multiple players.",
+            description: "A text based scrabble game that was created for a university project that was built by four members.",
             tools: ["C++", "Linked List", "ADT", "Blackbox Testing"],
             link: "https://github.com/Meviii/APT-Assignment-2"
         },
         scrabble_game_extension: {
             title: "Scrabble Game Extension",
-            description: "This is a personal extension to the Scrabble Game with more advanced features.",
+            description: "This is a personal extension to the Scrabble Game with more advanced features such as four player mode and advanced word checking",
             tools: ["C++", "Custom Algorithms", "Linked List", "ADT", "Blackbox Testing"],
             link: "https://github.com/Meviii/APT-Assignment2-Individual"
         },
@@ -70,7 +74,7 @@ export const config = {
         },
         portfolio: {
             title: "Portfolio Website",
-            description: "A portfolio website that presents my projects in a nice way :D",
+            description: "A well organised portfolio website that presents my projects in a nice way :D",
             tools: ["React", "TypeScript", "CSS", "EmailJS"],
             link: "https://github.com/Meviii/mev-portfolio"
         },
@@ -82,9 +86,15 @@ export const config = {
         },
         mcba_console: {
             title: "MCBA - Console Application",
-            description: "A console application written in C# designed for a bank providing a banking system for customers.",
+            description: "Console version of the WEB MCBA. This console application written in C# was designed for a bank providing a banking system with general features for customers.",
             tools: ["C#", "MVC", "Dependency Injection", "Azure SQL"],
             link: "https://github.com/rmit-wdt-fs-2023/s3717696-a1"
+        },
+        lol_checker: {
+            title: "League of Legends Account Checker/Profiler",
+            description: "A GUI application that interacts with the RIOT API to retrieve detailed data about the supplied accounts. Also completes time consuming tasks in seconds.",
+            tools: ["C#", "GUI", "API", "Multi-Threading"],
+            link: "https://github.com/Meviii/LOL-Account-Checker"
         }
 
     },

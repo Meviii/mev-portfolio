@@ -9,6 +9,7 @@ import Header from './components/header';
 import Projects from './components/projects';
 import Footer from './components/footer';
 import Contact from './components/contact';
+import Overview from './components/overview';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,8 +17,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Header />
-    <About />
+    <Overview />
     <Projects />
+    <About />
     <Contact />
     <Footer />
   </React.StrictMode>

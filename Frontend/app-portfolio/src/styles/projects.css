@@ -1,6 +1,6 @@
 .projects {
     justify-content: center;
-    margin: 0px 220px;
+    margin: 50px 220px;
 }
 
 .card-container {
@@ -16,8 +16,8 @@
     align-items: center;
     width: 375px;
     height: 250px;
-    background-color: rgba(116, 58, 163, 0.6);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(46, 46, 218, 0.6);
+    box-shadow: 0 4px 8px rgb(141, 141, 141);
     border-radius: 20px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -51,7 +51,7 @@
     text-align: left;
     margin-bottom: 5px;
     margin-right: 20px;
-    color: rgb(225, 206, 241);
+    color: rgb(205, 205, 205);
 }
 
 .card__tools li {

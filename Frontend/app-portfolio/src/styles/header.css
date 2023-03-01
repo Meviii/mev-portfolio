@@ -7,7 +7,7 @@
 }
 
 .nav-bar button {
-    background-color: rgb(109, 87, 199);
+    background-color: rgba(67, 67, 234, 0.6);
     border: rgb(251, 250, 255);
     border-radius: 5px;
     padding: 10px 20px;
@@ -21,14 +21,14 @@
 }
 
 .nav-bar button:hover {
-    background-color: rgb(148, 76, 184);
+    background-color: rgb(57, 67, 214);
 }
 
 .logo {
     flex: 1;
     font-size: 15px;
     text-align: left;
-    padding: 0 40px;
+    padding: 10px 40px;
 }
 
 .nav-bar {
@@ -50,9 +50,9 @@
 
 .nav-bar a {
     text-decoration: none;
-    color: rgb(211, 213, 120);
+    color: rgb(255, 255, 255);
 }
 
 .nav-bar a:hover {
-    color: rgb(109, 87, 199);
+    color: rgb(57, 67, 214);
 }
